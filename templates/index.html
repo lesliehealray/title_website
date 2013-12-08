@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+      <div class="row-fluid">
+        <div class="span12 pagination-centered">
+
+		<div id="myCarousel" class="carousel slide">
+		  <ol class="carousel-indicators">
+		   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		   <li data-target="#myCarousel" data-slide-to="1"></li>
+		   <li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+		  <!-- Carousel items -->
+		  <div class="carousel-inner">
+			<div class="active item"><h3 class="text-center"><a href="{{ url_for("index") }}"><img src="{{ url_for('static', filename='images/PTCLO250h.jpg') }}" alt="Pinnacle Title" /></a></h3></div>
+			<div class="item"><h3 class="text-center"><a href="{{ url_for("index") }}"><img src="{{ url_for('static', filename='images/PTCSL250h.jpg') }}" alt="Pinnacle Title" /></a></h3></div>
+			<div class="item"><h3 class="text-center"><a href="{{ url_for("index") }}"><img src="{{ url_for('static', filename='images/PTCDA250h.jpg') }}" alt="Pinnacle Title" /></a></h3></div>
+		</div>
+		 
+		  <!-- Carousel nav -->
+		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		  </div>
+	  </div>
+
+	  </div>
+      <div class="row-fluid">
+
+        <div class="span4 pagination-centered">
+          <h2>Logan</h2>
+          <p>131 North Main Street<br>(435)755-9090</p>
+          <p><a class="btn" href="{{ url_for("page", slug="locations") }}">View Details &raquo;</a></p>
+			</div>
+        <div class="span4 pagination-centered">
+          <h2>Salt Lake City</h2>
+          <p>5292 South College Drive #104<br>(801)270-9090</p>
+          <p><a class="btn" href="{{ url_for("page", slug="locations") }}">View Details &raquo;</a></p>
+       </div>		
+        <div class="span4 pagination-centered">
+          <h2>Clearfield</h2>
+          <p>1436 South Legend Hills Drive #323<br>(801)825-9100</p>
+          <p><a class="btn" href="{{ url_for("page", slug="locations") }}">View Details &raquo;</a></p>
+        </div>
+      </div>
+{% endblock content %}
+
+{% block extra_js %}
+<script type="text/javascript">
+$('#myCarousel').carousel({
+    interval: 5000
+});
+</script>
+{% endblock %}
+
+
+

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row-fluid">
+	<div class="span6">
+		<h2>Forms</h2>
+		<a href="{{ url_for('static', filename='pdfs/repc.pdf') }}">Real Estate Purchase Contract (REPC)</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/add98.pdf') }}">Addendum to REPC</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/assadd.pdf') }}">Assumption Addendum to REPC</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/buyerfin.pdf') }}">Buyer Financial Information Sheet</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/fhaloav.pdf') }}">FHA/VA Loan Addendum</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/sellfinr.pdf') }}">Seller Financing Addendum</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/survadd.pdf') }}">Survey Addendum</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/lbpadd.pdf') }}">Lead Based Paint Addendum</a> <br>		
+		<a href="{{ url_for('static', filename='pdfs/lbpdiscl.pdf') }}">Disclosure and Acknowledgement Regarding Lead Based Paint</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/repcrp98.pdf') }}">REPC for Residential Construction</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/complain.pdf') }}">Real Estate Complaint Form</a> <br>
+		<a href="{{ url_for('static', filename='pdfs/tempapp.pdf') }}">Non-Resident Appraiser Application for Temporary Practice</a> <br>
+	</div>
+	<div class="span6">
+		<h2>Useful Links</h2>
+		<a href="http://www.ratecalculator.fnf.com/">Rate Calculator</a> <br>
+		<a href="http://facc.firstam.com/">Fee Calculator</a>
+	</div>
+
+</div>
+
+{% endblock content %}
